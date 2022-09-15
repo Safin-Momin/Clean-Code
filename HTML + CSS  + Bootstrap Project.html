@@ -1,167 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clean Code</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="icon" href="image/favicon.png">
+        <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    #one{
-        background-color: purple;
-    }
-    .nav-link{
-        color: white;
-        margin-right: 30px;
-    }
-    .nav-link:hover{
-        color: white;
-    }
-    .navbar-nav{
-        margin-right: -20px;
-    }
-    .logo{
-        margin-top: -120px;
-        margin-left: 25px;
-    }
-    .jdata{
-        background-color: purple;
-    }
-    .btext{
-        font-size: 2rem;
-    }
-    .fimg{
-        margin-top: -30px;
-    }
-    .c1{
-        float: left;
-    }
-    .c2{
-        margin-left: 70px;
-        margin-top: 10px;
-    }
-    .c3{
-        margin-top: 30px;
-        font-size: 2rem;
-    }
-    .c4{
-        margin-top: -22px;
-    }
-    .c5{
-        font-size: 1.5rem;
-        margin-left: -125px;
-        margin-top: 30px;
-    }
-    .c6{
-        text-align: center;
-    }
-    .c7{
-        margin-top: 30px;
-        font-size: 1.5rem;
-    }
-    .c8{
-        margin-top: -35px;
-        background-color: white;
-    }
-    .c9{
-        margin-top: 40px;
-    }
-    .c10{
-        font-size: .8rem;
-    }
-    .c20{
-        text-align: center;
-        background-color: purple;
-        border: none;
-        color: white;
-        border-radius: 30px;
-        padding: 5px 20px 5px 20px;
-        margin-top: 20px;
-    }
-    .c11{
-        font-size: 2rem;
-    }
-    .c12{
-        margin-top: 40px;
-        font-size: 2rem;
-        padding-top: 30px;
-    }
-    ul li{
-        line-height: 30px;
-    }
-    .idata{
-        border-radius: 50%;
-        float: left;
-    }
-    .secdata{
-        margin-left: 50px;
-        padding-left:10px;
-        border-left: 2px solid purple;
-    }
-    .c13{
-        margin-left: 70px;
-    }
-    .c14{
-        margin-left: 70px;
-        margin-top: -20px;
-    }
-    .secdata1{
-        margin-left: -120px;
-    }
-    .c15{
-        text-align: center;
-        font-size: 1.2rem;
-        padding-top: 50px;
-        margin-top: -30px;
-    }
-    .c15 img:hover{
-        transform: translateY(20px);
-        transition: .7s;
-    }
-    .c16{
-        background-color: purple;
-        color: white;
-        margin-top: 50px;
-    }
-    .c17{
-        font-size: .9rem;
-    }
-    .c18{
-        border-radius: 5px;
-        border: none;
-        padding-left: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-    }
-    .c19{
-        background-image: linear-gradient(to right,rgb(219, 37, 219),rgb(82, 13, 82));
-        color: white;
-        border: none;
-    }
-</style>
+
 <body>
     <section id="one">
-        <nav class="navbar navbar-expand-lg">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#one">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#two">Designing Language</a></li>
-                <li class="nav-item"><a class="nav-link" href="#three">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#four">Testimonials</a></li>
-                <li class="nav-item"><a class="nav-link" href="#five">Contact Us</a></li>
-            </ul>
-        </nav>
-        <img class="logo" src="image/demo-logo.png" alt="" width="120px">
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#"><img class="logo img-fluid" src="image/demo-logo.png" alt="logo" width="120px" style="margin-top: -20px;"></a>
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon text-white"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#one" style="color: white;">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#two" style="color: white;">Designing Language</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#three" style="color: white;">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#four" style="color: white;">Testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#five" style="color: white;">Contact Us</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+
+        
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 pl-5 mt-5">
+                <div class="col-lg-6 col-md-12 col-sm pl-5 mt-5">
                     <div class="jumbotron jdata">
-                        <h1 class="btext"><font color="white">BEST DIGITAL LEARNING<br>SITE</font></h1>
-                        <P><font color="white">Here this website create using HTML, CSS, Bootatrap, so<br>u want to also create this type of website than watch our<br>video</font></P><br>
-                        <img class="c1" src="image/play.png" alt="" width="50px"><p class="c2"><font color="white">Watch This</font></p>
+                        <h1 class="btext">
+                            <font color="white">BEST DIGITAL LEARNING<br>SITE</font>
+                        </h1>
+                        <P>
+                            <font color="white">Here this website create using HTML, CSS, Bootatrap, so<br>u want to
+                                also create this type of website than watch our<br>video</font>
+                        </P><br>
+                        <img class="c1" src="image/play.png" alt="" width="50px">
+                        <p class="c2">
+                            <font color="white">Watch This</font>
+                        </p>
                     </div>
                 </div>
-                <div class="col-sm-6 pr-5">
+                <div class="col-lg-6 col-md-12 col-sm-6 pr-5">
                     <div class="jumbotron fimg jdata">
                         <img class="img-fluid" src="image/home2.png" alt="">
                     </div>
@@ -170,33 +72,48 @@
         </div>
         <img class="img-fluid" src="image/wave1.png" alt="">
     </section>
+
+
     <section id="two">
-        <h1 class="c3"><center>Web Designing</center></h1>
-        <hr style="border: 2px solid purple;" width="12%"><hr class="c4" style="border: 4px solid purple;" width="3%">
+        <h1 class="c3">
+            <center>Web Designing</center>
+        </h1>
+        <hr style="border: 2px solid purple;" width="12%">
+        <hr class="c4" style="border: 4px solid purple;" width="3%">
         <div class="container">
             <div class="row mr-4 ml-4">
                 <div class="col-sm-4 c6">
                     <img class="img-fluid" src="image/htmlimg.png" alt="">
-                    <h1 class="c7"><center>HTML</center></h1>
-                    <p class="c10">The Hyper Text Markup Language, or HTML is the Standard markup language for documents designed to be displayed in a web browser.</p>
+                    <h1 class="c7">
+                        <center>HTML</center>
+                    </h1>
+                    <p class="c10">The Hyper Text Markup Language, or HTML is the Standard markup language for documents
+                        designed to be displayed in a web browser.</p>
                 </div>
                 <div class="col-sm-4 c6 mt-4">
                     <img class="img-fluid c8" src="image/cssimg.png" alt="" width="190px">
                     <h1 class="c7">CSS</h1>
-                    <p class="c10"><abbr title="Cascading Style Sheet">CSS</abbr> is a style sheet language used for describing the presentation of a document written in a markup language such as HTML</p>
+                    <p class="c10"><abbr title="Cascading Style Sheet">CSS</abbr> is a style sheet language used for
+                        describing the presentation of a document written in a markup language such as HTML</p>
                 </div>
                 <div class="col-sm-4 c6">
                     <img class="c9" src="image/bootimg.jpg" alt="" width="200px">
                     <h1 class="c7">BOOTSTRAP</h1>
-                    <p class="c10">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.</p>
+                    <p class="c10">Bootstrap is a free and open-source CSS framework directed at responsive,
+                        mobile-first front-end web development.</p>
                 </div>
             </div>
         </div>
         <center><button class="c20">Designing Language</button></center>
     </section>
+
+
     <section id="three" class="bg-light">
-        <h1 class="c12"><center>Why Choose Us?</center></h1>
-        <hr style="border: 2px solid purple;" width="12%"><hr class="c4" style="border: 4px solid purple;" width="3%">
+        <h1 class="c12">
+            <center>Why Choose Us?</center>
+        </h1>
+        <hr style="border: 2px solid purple;" width="12%">
+        <hr class="c4" style="border: 4px solid purple;" width="3%">
         <div class="container">
             <div class="row mb-5 pb-5">
                 <div class="col-sm-6 pl-5 mt-5">
@@ -215,67 +132,85 @@
             </div>
         </div>
     </section>
+
+
     <section id="four">
-        <h1 class="c11"><center>What Client Say</center></h1>
-        <hr style="border: 2px solid purple;" width="12%"><hr class="c4" style="border: 4px solid purple;" width="3%">
+        <h1 class="c11">
+            <center>What Client Say</center>
+        </h1>
+        <hr style="border: 2px solid purple;" width="12%">
+        <hr class="c4" style="border: 4px solid purple;" width="3%">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm">
                     <div class="jumbotron bg-white">
                         <div class="secdata">
-                            <p class="c10">Share our Website if u like out website create through HTML, CSS,<br> Bootstrap</p>
+                            <p class="c10">Share our Website if u like out website create through HTML, CSS,<br>
+                                Bootstrap</p>
                             <img class="img-fluid idata" src="image/user1.jpg" alt="" width="50px">
-                            <p class="c13"><b>Agelina</b></p><p class="c14">Co-founder at xyz</p>
+                            <p class="c13"><b>Agelina</b></p>
+                            <p class="c14">Co-founder at xyz</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm">
                     <div class="jumbotron bg-white">
-                        <div class=" secdata secdata1">
-                            <p class="c10">Share our Website if u like out website create through HTML, CSS,<br>Bootstrap</p>
+                        <div class="secdata">
+                            <p class="c10">Share our Website if u like out website create through HTML, CSS,<br>
+                                Bootstrap</p>
                             <img class="img-fluid idata" src="image/user2.jpg" alt="" width="50px">
-                            <p class="c13"><b>John Doe</b></p><p class="c14">Director at xyz</p>
+                            <p class="c13"><b>John Doe</b></p>
+                            <p class="c14">Director at xyz</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
     <section id="five" class="bg-light">
-            <div class="c15">
-            <h1 class="c11"><center>Find Us On Social Media</center></h1>
-            <hr style="border: 2px solid purple;" width="15%"><hr class="c4" style="border: 4px solid purple;" width="3%">
+        <div class="c15">
+            <h1 class="c11">
+                <center>Find Us On Social Media</center>
+            </h1>
+            <hr style="border: 2px solid purple;" width="15%">
+            <hr class="c4" style="border: 4px solid purple;" width="3%">
             <img src="image/facebook-icon.png" alt="" width="50px">
             <img src="image/instagram-icon.png" alt="" width="50px">
             <img src="image/twitter-icon.png" alt="" width="50px">
             <img src="image/whatsapp-icon.png" alt="" width="50px">
             <img src="image/linkedin-icon.png" alt="" width="50px">
             <img src="image/snapchat-icon.png" alt="" width="50px">
-            </div>
+        </div>
         <div class="c16">
             <img class="img-fluid" src="image/wave2.png" alt="">
             <div class="container">
                 <div class="row ml-5">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 responsivedata">
                         <img src="image/demo-logo.png" alt="" width="100px"><br><br>
                         <p class="c17">Share Our Website if u like out website create through HTML, CSS, Bootstrap</p>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 responsivedata">
                         <h6>CONTACT US</h6><br>
                         <p class="c17">World Trade Center, Bhavnagar<br><br>1234455667<br><br>xyz@gmail.com</p>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 responsivedata">
                         <h6>SUBSCRIBE NEWSLETTER</h6><br>
                         <table>
                             <form action="">
-                                <tr><td><input class="c18 c17" type="email" value="Your Email"></td></tr>
+                                <tr>
+                                    <td><input class="c18 c17" type="email" value="Your Email"></td>
+                                </tr>
                             </form>
                         </table><br>
                         <button class="c19">Subscribe</button>
                     </div>
                 </div>
-                <hr style width="90%" color="white">
-                <p><center>Website Create By Clean Code</center></p><br>
+                <hr style width="90%" color="white" class="responsivedata">
+                <p>
+                    <center>Website Create By Clean Code</center>
+                </p><br>
             </div>
         </div>
     </section>
