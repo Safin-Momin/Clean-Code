@@ -7,62 +7,27 @@ html {
 }
 
 .nav-link {
-    color: white;
     margin-right: 30px;
-}
-
-.nav-link:hover {
-    color: white;
 }
 
 .navbar-nav {
     margin-right: -20px;
 }
 
-/* @media screen and (max-width: 1000px) {
-    .navbar{
-        display: flex;
-        align-items: center;
-        margin-right: 369px;
-        text-align: center;
-        text-decoration: none;
-    }
-} */
-.logo {
-    margin-top: -120px;
-    margin-left: 25px;
+nav{
+    z-index: 1;
 }
-
-@media screen and (max-width: 1000px) {
-    .logo {
-        display: block;
-        margin: auto;
-    }
-
-    .navbar-nav {
-        display: block;
-        margin: auto;
-    }
-
-    .secdata {
-        display: flex;
-        /* align-items: center; */
-        /* justify-content: center; */
-        /* flex-direction: column; */
-        flex-flow: column;
-    }
-}
-
-/* @media screen and (max-width: 800px) {
-    .col-12 {
-        display: block;
-        margin: auto;
-    }
-} */
 
 @media screen and (max-width: 500px){
     .responsivedata{
         margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .secdata1{
+        display: block;
+        margin: auto;
     }
 }
 
